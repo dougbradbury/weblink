@@ -1,0 +1,11 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" media="all" href="/main.css">
+	<title>weblink</title>
+</head>
+<body>
+	<h3>Welcome to weblink!</h3>
+	<%= erb :led, :locals => {:id => 1, :led => @led1} %>
+	<%= erb :led, :locals => {:id => 2, :led => @led2} %>	
+</body>
+</html>

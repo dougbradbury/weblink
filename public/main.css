@@ -1,0 +1,13 @@
+.led img {
+	border:0px;
+	text-align:center;
+}
+
+.led p{
+	text-align:center;
+}
+.led {
+	padding: 10px 10px 10px 10px;
+	float:left;
+	width:200px;
+}

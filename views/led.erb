@@ -1,0 +1,15 @@
+<div id="led_<%=id%>" class="led">
+	<p>LED<%=id%></p>
+	<p>
+	<% if led.on? %>
+		<a href='off/<%=id%>'><img src="green-on-64.png"></a>
+	<% else %>
+	 	<a href='on/<%=id%>'><img src="green-off-64.png"></a>
+	<% end %>
+	</p>
+	<form action="say/<%=id%>" method="post">
+		<p>Message: <input type="text" name="message" size="10"></p>
+		<p>Speed:  <input type="text" name="speed" size="4" value="0.2"/></p>
+		<p><input type="submit" value="Say It"></p>
+	</form>
+</div>
