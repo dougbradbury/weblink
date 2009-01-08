@@ -6,7 +6,6 @@ class MorseBlinker
   
   def say(code)    
     code.each_byte do |char|
-      off_time = 1
       case char
       when 46 # '.' 
         turn_on_for(1)
